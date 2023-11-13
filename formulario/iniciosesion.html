@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Iniciar Sesion</title>
+    <!-- <link rel="stylesheet" tybe="text/css" href="normalize.css">
+    <link rel="stylesheet" tybe="text/css" href="style.css"> -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="figuras, juguetes, anime">
+    <meta name="description" content="tienda de figuras de accion">
+    <meta name="author" content="Jorge">
+    <meta name="copyright" content="Facebook">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url(fondo.jpg);
+}
+ .flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(4, 4, 4, .8);
+    margin: 50px 30px;
+    padding: 20px;
+    
+}
+
+.form{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid  rgb(189, 159, 186);
+    background: transparent;
+    color: #fff;
+}
+.form__input:focus{
+
+    background: linear-gradient(to bottom, transparent, #333);
+    outline: none;
+    border-bottom: 3px solid rgb(163, 105, 157);
+}
+.form textarea{
+    min-height:160px ;
+    resize: none;
+}
+.form-img{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 200px;
+    order: 2;
+}
+.form-img div{
+    padding: 10px;
+
+}
+.img-container{
+ 
+    margin: auto;
+}
+.img-container div{
+    background-color:  rgb(189, 159, 186);
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-img img{
+    width: 90%;
+    margin: auto;
+} 
+
+.form input[type="submit"]{
+    background-color:  rgb(189, 159, 186);
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover{
+    background-color:  rgb(163, 105, 157);
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="button"]{
+    background-color:  rgb(189, 159, 186);
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover{
+    background-color:  rgb(163, 105, 157);
+    border-bottom: none;
+    padding: 12px;
+}
+.form__section h1{
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.login{
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.forget{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <form class="form">
+            <div class="form__section">
+                <h1>Iniciar Sesión</h1>
+            </div>
+            <div class="form__section">
+                <input type="email" class="form__input" placeholder="Escriba su email">
+            </div>
+            <div class="form__section">
+                <input type="password" class="form__input" placeholder="Escriba su contraseña">
+            </div>
+
+            <div class="form__section login">
+                <input type="submit" value="Ingresar" class="form__input">
+
+            </div>
+            <div class="form__section forget">
+                <input type="submit" value="Registrarse" class="form__input" formaction="registrarse.html">
+            </div>
+            <div class="form__section forget">
+                <input type="button" value="¿Ha olvidado su contraseña?" class="form__input">
+            </div>
+          
+        </form>
+        <div class="form-img">
+            <div class="img-container">
+                <div>
+                    <img
+                    src="flower-logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
